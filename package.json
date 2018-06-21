@@ -1,0 +1,21 @@
+{
+  "name": "farm-active-calendar",
+  "version": "1.0.0",
+  "description": "Software to make adding spray hours easier, so the dont have to write it down. also can export data to excell easily.. and be interactive",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "farm",
+    "agriculture",
+    "farming",
+    "software",
+    "agg"
+  ],
+  "author": "sleek-turtle",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0"
+  }
+}
