@@ -26,7 +26,7 @@ but thhe modals and text boxes will be geared towards an orchard currently.
 
 #### How do i use this?
 
-it gets a bit complicated ehre. 
-The server will connect to localhost, and get port forwarded by the network. you can change 
-the port specified in the .env file but other than that, to acceess it on your network you 
-will need to pport forward your computer as well. and change the computers resolved paths to the right port as well.
+> it gets a bit complicated Here. The server will connect to localhost, and get port forwarded by the network. you can change 
+> the port specified in the .env file but other than that, to acceess it on your network you will need to pport forward your computer as well. and change the computers resolved paths to the right port as well.h
+
+However you could just operate this all on local host if you only need one computer on the network.
