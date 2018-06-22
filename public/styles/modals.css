@@ -1,0 +1,21 @@
+
+
+.modal {
+  margin: auto;
+  display: block;
+  z-index: 5; /* keep that in the skyy */
+}
+
+/* this will contain all the general modals for
+each caterogy of each question.*/
+.genModal{
+  display: flex;
+}
+
+.genModal button{
+  background-color: greysmoke;
+  border-radius: 25%;
+  padding: 6px;
+  margin: 5px 7px 5px 7px;
+
+}

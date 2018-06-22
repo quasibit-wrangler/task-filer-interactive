@@ -3,3 +3,55 @@
 .hidden {
   display: none;
 }
+
+
+#calendar{
+  margin:auto;
+  padding: auto;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  /* flex-wrap: 1; */
+}
+/*======
+===========Calendar styles
+====
+ these styles corresspone do each day elements.
+*/
+.day{
+  width:100px;
+  height:100px;
+
+  border-radius: 8px;
+}
+
+.day:hover{
+  /* transition: width 2s linear 1s; */
+  box-shadow: 2px 2px 3px #00FF7F;
+
+  background-color: #00FF7F;
+  background-color: rgba(0,255,127,0.75);
+}
+
+.inactive{
+  box-shadow: 2px 2px 2px red;
+
+  background-color: #DC143C;
+  background-color: rgba(220,20,60,0.75);
+}
+
+.active{
+  box-shadow: 2px 2px 3px #00FF7F;
+
+  background-color: #00FF7F;
+  background-color: rgba(0,255,127,0.75)
+
+}
+/*======
+===========END Calendar styles
+====
+*/
+
+/*======
+===========Page styles
+====
+*/
