@@ -1,16 +1,28 @@
 
 
 .modal {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
   margin: auto;
   display: block;
+  position: fixed;
+  top: 25%;
+  left: 40%;
   z-index: 5; /* keep that in the skyy */
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 /* this will contain all the general modals for
 each caterogy of each question.*/
-.genModal{
+/* .genModal{
   display: flex;
-}
+} */
 
 .genModal button{
   background-color: greysmoke;
@@ -18,4 +30,25 @@ each caterogy of each question.*/
   padding: 6px;
   margin: 5px 7px 5px 7px;
 
+}
+
+table{
+  border-collapse: collapse;
+    width: 100%;
+    border: 0px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+#submit, #cancel  {
+  position: relative;
+  top: 275px;
+  display: inline-block;
+  margin: auto;
+}
+
+
+.hidden {
+  display: none;
 }

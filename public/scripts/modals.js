@@ -7,9 +7,13 @@ dynamiccall with innerHTML.
  <button> What? </button> \
  <button> Where? </button> \
  <button> When? </button> \
-  \
- \
-  <button id="closeModal"> |X| </button> \
+ <br /> <br /> <br /> \
+ <table> \
+ <tr> \
+  <td><button id="cancel"> |x| Cancel |X| </button></td> \
+  <td><button id="submit"> Submit </button> </td>\
+  </tr> \
+  </table> \
  </article>';
 
 var whoModal = ''; //list of names also write inss
