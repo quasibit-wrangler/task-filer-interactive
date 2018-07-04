@@ -30,10 +30,44 @@
     <button id="addTask"> + </button>
 
     <section id="modals">
+      <div id="modal-backdrop"></div>
 
-      <article class="modal what hidden">
+<!--
+====  Modals sections ... ===
+        THESE MODALS WILL pop up one at time.
+        in order to fill out the necessry informaion -->
+      <article id="who" class="modal who hidden">
 
+        <button class="sub submit">submit</button>
+        <button class="sub cancel">cancel</button>
       </article>
+      <article id="what" class="modal hidden">
+
+        <select id="stuff-category">
+        </select>
+        <select id="stuff-name">
+        </select>
+
+        <button class="sub submit">submit</button>
+        <button class="sub cancel">cancel</button>
+      </article>
+      <article id="when" class="modal when hidden">
+
+        <button class="sub submit">submit</button>
+        <button class="sub cancel">cancel</button>
+      </article>
+      <article id="where" class="modal where hidden">
+
+        <button class="sub submit">submit</button>
+        <button class="sub cancel">cancel</button>
+      </article>
+
+
+<!-- ===== end Modlas sections
+      after all these modlas have bee nfilled out, a new post
+      can bee submitted.
+       -->
+
     </section>
 
   </main>

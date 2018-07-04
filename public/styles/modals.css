@@ -4,6 +4,7 @@
   padding: 10px;
   border: 1px solid grey;
   border-radius: 5px;
+  background-color: grey;
   width: 400px;
   height: 400px;
   margin: auto;
@@ -24,7 +25,7 @@ each caterogy of each question.*/
   display: flex;
 } */
 
-.genModal button{
+.general button{
   background-color: greysmoke;
   border-radius: 25%;
   padding: 6px;

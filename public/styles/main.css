@@ -3,8 +3,9 @@
 
 
 #calendar{
-  margin:auto;
+  margin: auto;
   padding: auto;
+  width: auto;
   display: -webkit-flex; /* Safari */
   display: flex;
   /* flex-wrap: 1; */
@@ -15,9 +16,11 @@
  these styles corresspone do each day elements.
 */
 .day{
-  width:100px;
-  height:100px;
+  width:175px;
+  height:200px;
 
+  paddin: 8px;
+  margin: 0px 5px 0px 5px;
   border-radius: 8px;
 }
 
