@@ -2,7 +2,7 @@
 dynamiccall with innerHTML.
 */
  var newTaskModal =
- '<article class="modal geneal"> \
+ '<article class="modal general"> \
  <button class="who"> Who? </button> \
  <button class="what"> What? </button> \
  <button class="where"> Where? </button> \
@@ -16,14 +16,11 @@ dynamiccall with innerHTML.
   </table> \
  </article>';
 
-var whoModal = ''; //list of names also write inss
-var whatModal = ''; // picutres of material, quantity and type.
-var whereModal = ''; // maybe image map? suggestions.
-var whenModal = ''; // this is basically just a date.
-
 
 /* These are all the different things that can be done,
 when used, the cateogry dropbox is filled based on the data.
+they dont have quantities or locaitons, all they are
+is products.
 name :: cateogry :: img
 */
 var whatData = [{
@@ -48,7 +45,16 @@ var whatData = [{
   }
 ]
 
-/* === Event listeners
+
+
+var whoModal = ''; //list of names also write inss
+var whatModal = ''; // picutres of material, quantity and type.
+var whereModal = ''; // maybe image map? suggestions.
+var whenModal = ''; // this is basically just a date.
+
+
+
+/* === add the global Event listeners
 */
 window.addEventListener("load",function(){
   let plus = document.body.querySelector('#addTask');
@@ -57,9 +63,11 @@ window.addEventListener("load",function(){
 /*=== end event listeners
 */
 
+
+
 /*name: handles click on the gernal modals
 input: click locaiton
-output: decides which modal
+output: decides which modal function to fcall
 */
 function handleGeneralModal(event){
     var name = event.target.classList[0];
@@ -74,11 +82,51 @@ function handleGeneralModal(event){
             specificModal(name);break;
       case "sumbit":
       case "cancel":
-            verifyAllInfo();break;
-      default: console.log("what");break;
+      case "sub":
+            verifyAllInfo(event);break; // which submit button was clicked?
+      default: break;
     }
     return;
 }
+
+
+/* decides which modal to build
+err i mean unhide. this handes each moda click in the modal
+*/
+function specificModal(name){
+  let string = '#' + name;
+  var modal = document.body.querySelector(string);
+  console.log("you have selected the ", name," modal",modal);
+
+  modal.classList.remove('hidden');
+}
+function verifyAllInfo(event){
+  console.log(event.target.parentNode.id);
+
+}
+
+/*All these funcitns will have to verify each modal. and they will have'
+to check different things each time! ther is submit and there
+is the cancel so those will ahve to be fuunctions too
+
+inputs: none,
+outputs: json of the info they inputted*/
+
+function verifyWhat(){
+
+
+}
+function verifyWho(){
+
+}
+function verifyWhere(){
+
+}
+function verifyWhen(){
+
+}
+
+
 
 /*Add a new task!
 This will open up the modal to the
@@ -87,7 +135,7 @@ a bunch of sub modals from here.
 */
 function taskModal(){
   let section = document.body.querySelector('#modals');
-  section.innerHTML = newTaskModal;
+  section.innerHTML += newTaskModal;
   section.addEventListener('click',handleGeneralModal);
 
 }
