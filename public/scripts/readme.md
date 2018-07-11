@@ -23,9 +23,17 @@ And all modals must be filled before sending to the database.
 
 ![alt text](https://github.com/sleek-turtle/task-filer-interactive/blob/master/public/scripts/docs/new-post-message-sequence.png "Message Sequence")
 
+### How do i use each of the modal?
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+#### The What Modal
+
+Here you will have to Enter the name of the item, and how much you will be using.
+To guide you through this product there is a list where you can search directly by name, or you can refine it by category.
+As you mouseover each name an image will popup telling you exactly what it should look like.
+
+#### The Who Modal
+
+#### The Where Modal
+
+
+#### The When Modal
