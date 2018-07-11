@@ -30,3 +30,12 @@ but thhe modals and text boxes will be geared towards an orchard currently.
 > the port specified in the .env file but other than that, to acceess it on your network you will need to pport forward your computer as well. and change the computers resolved paths to the right port as well.h
 
 However you could just operate this all on local host if you only need one computer on the network.
+
+
+### documentatiotn
+
+currently there is some documentation. hopeefulyl more soon.
+
+
+Check out the modals.js documentation where we go over a couple digrams that show how stuff happens.
+[Modals documentation](https://github.com/sleek-turtle/task-filer-interactive/blob/master/public/scripts/readme.md)
