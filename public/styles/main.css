@@ -8,7 +8,7 @@
   width: auto;
   display: -webkit-flex; /* Safari */
   display: flex;
-  /* flex-wrap: 1; */
+  flex-wrap: wrap;
 }
 /*======
 ===========Calendar styles

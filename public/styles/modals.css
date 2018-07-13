@@ -45,11 +45,28 @@ for creative purposes */
 }
 
 
+/* <!--
+==== Special Modal input nodes ... ===
+      Styles for the specicifc inputs to each modals
+  like the <input> <option> <button> ...  --> */
+
+
+  .modal input[type="text"]{
+    display: block;
+  }
+
+  .modal select{
+    width: 75px;
+    height: 30px;
+  }
 
 
 button:hover{
   cursor: pointer;
 }
+/* <!-- ===== end Modlas sections
+      oddly specific entries for the modal INPUTS
+       --> */
 
 /* this will contain all the general modals for
 each caterogy of each question.*/
