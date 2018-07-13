@@ -70,9 +70,34 @@ window.addEventListener("load",function(){
 
   fillModals();
 
+
+
 });
 /*=== end event listeners
 */
+document.querySelector('#stuff-category').addEventListener('click',refineWhats);
+
+
+function refineWhats(){
+  var category = document.querySelector('#stuff-category').value;
+  var results = document.querySelector('#stuff-name');
+  console.log('categories that are: ', category);
+
+  while (results.firstChild.nextSibling) {
+    results.removeChild(results.lastChild);
+  }
+
+  let slave =0;
+  for(let i=0; i<whatData.length;i++){
+    if(whatData[i].category == category){
+      slave=document.createElement('option');
+      slave.value=whatData[i].name;
+      slave.textContent=whatData[i].name;
+      results.appendChild(slave);
+    }
+  }
+}
+
 
 
 
@@ -146,28 +171,6 @@ function verifyWhat(){
 
 }
 
-document.querySelector('#stuff-category').addEventListener('click',function(event){
-
-  var category = document.querySelector('#stuff-category').value;
-  var results = document.querySelector('#stuff-name');
-  console.log('categories that are : ', category);
-
-  while (results.firstChild.nextSibling) {
-    results.removeChild(results.lastChild);
-  }
-
-  let slave =0;
-  for(let i=0; i<whatData.length;i++){
-    if(whatData[i].category == category){
-      slave=document.createElement('option');
-      slave.value=whatData[i].name;
-      slave.textContent=whatData[i].name;
-      results.appendChild(slave);
-    }
-  }
-
-
-});
 
 
 
